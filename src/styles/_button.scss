@@ -1,0 +1,63 @@
+@import './variables';
+
+.sm_buton_container{
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 10px;
+}
+
+.lg_buton_container{
+    grid-template-columns: auto auto;
+}
+
+.button_container{
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    :hover {
+        opacity: 0.9;
+    }
+
+    :active {
+        opacity: 0.9;
+        box-shadow: 0 1px #666;
+        transform: translateY(1px);
+    }
+
+    button{
+        height: 50px;
+        padding: 1px;
+        cursor: pointer;
+        text-align: center;
+        font-weight: 900;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        border-bottom: 2px solid $button-bottom-color;
+    };
+    
+    .num_button {
+        min-width: 25px;
+        background-color: $default-button-background-color;
+        color: $button-text-color-dynamic;
+    };
+
+    .del_button {
+        min-width: 25px;
+        background-color: $del-button-background-color;
+        color: $button-text-color-default;
+    };
+
+    .result_button{
+        min-width: 100px;
+        background-color: $result-button-background-color;
+        color: $button-text-color-default;
+    };
+
+    .reset_button{
+        min-width: 100px;
+        background-color: $del-button-background-color;
+        color: $button-text-color-default;
+    };
+}
